@@ -1,0 +1,2558 @@
+<linked-hash-map>
+  <entry>
+    <string><![CDATA[IN_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[网外市话]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000001]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000001|18600000001|18600000000|||20130528223511|600|1|1|3|1556|1556|1556|2|20130528223511|1556|1|2]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130904103342|OCS|||100|8618600000001|8618600000001|8618600000000|18600000001|18600000000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000001:2,500,9500|0:0,0,0|0:1,60,50|1:2,500|1|2|1|-1||1556|1556||0556|0556|0556|1556|1556||0556|0556|0556||600|1|1||||||||500|||500|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[省内长途]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000002]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1551||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000002|18600000002|18999999999|||20130528223511|300|1|1|3|1556|1556|1556|2|20130528223511|1551|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130904152538|OCS|||100|8618600000002|8618600000002|8618999999999|18600000002|18999999999|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000002:2,250,9400;8600000002:2,350,9400|0:0,0,0|0:1,60,50;0:1,6,7|1:2,250;37:2,350|1|1|1|-1||1556|1556||0551|0556|0556|1551|1551||0551|0551|0551||300|2|1||||||||250|350||250|1|37|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[省外长途]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000004]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1817||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000004|18600000004|18674460004|||20130528223511|300|1|1|3|1556|1556|1556|2|20130528223511|1817|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130904161316|OCS|||100|8618600000004|8618600000004|8618674460004|18600000004|18674460004|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000004:2,250,9400;8600000004:2,350,9400|0:0,0,0|0:1,60,50;0:1,6,7|1:2,250;37:2,350|1|1|1|-1||1556|1556||0551|0556|0556|1817|1817||0557|0557|0557||300|3|1||||||||250|350||250|1|37|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[17909（或其他接入码）业务]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000005]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1551||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000005|18600000005|1790918999999999|||20130528223511|600|1|1|3|1556|1556|1556|2|20090528223511|1551|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130904174159|OCS|||100|8618600000005|8618600000005|8618999999999|18600000005|1790918999999999|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000005:2,200,9300;8600000005:2,500,9300|0:0,0,0|0:1,60,20;0:1,6,5|2:2,200;10:2,500|1|1|1|-1||1556|1556||0551|0556|0556|1551|1551||0551|0551|0551||600|2|1||||||||200|500||200|2|10|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[省内漫游]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000006]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1551||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000006|18600000006|18999999999|||20130528223511|330|1|1|3|1551|1551|1551|2|20090528223511|1551|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130904180518|OCS|||100|8618600000006|8618600000006|8618999999999|18600000006|18999999999|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000006:2,300,9580;8600000006:2,120,9580|0:0,0,0|0:1,60,50;0:1,60,20|1:2,300;20:2,120|1|1|1|-1||1551|1551||0551|0556|0551|1551|1551||0551|0551|0551||330|1|2||||||||300|120||300|1|20|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[省际漫游]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000007]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1551||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000007|18600000007|18999999999|||20130528223511|330|1|1|3|123456|123456|123456|2|20090528223511|1551|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130904183012|OCS|||100|8618600000007|8618600000007|8618999999999|18600000007|18999999999|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000007:2,300,9195;8600000007:2,120,9195;8600000007:2,385,9195|0:0,0,0|0:1,60,50;0:1,60,20;0:1,6,7|1:2,300;20:2,120;37:2,385|1|1|1|-1||123456|123456||0551|0556|0755|1551|1551||0551|0551|0551||330|3|3||||||||300|120|385|300|1|20|37||2||0|0|0|]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[国际长途]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000009|18600000009|16000001|||20130528223511|120|1|1|3|101|101|101|2|20090528223511||1|1|0556|001]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130905153343|OCS|||100|8618600000009|8618600000009|00116000001|18600000009|16000001|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000009:2,100,9840;8600000009:2,60,9840|0:0,0,0|0:1,60,50;0:1,60,30|1:2,100;39:2,60|1|1|1|-1||101|101||0551|0556|0556||||INTL|001|001||120|5|1||||||||100|60||100|1|39|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[港澳台长途]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000010]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000010|18600000010|17000002|||20130528223511|120|1|1|3||||2|20090528223511||1|1|0556|00852]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130905114923|OCS|||100|8618600000010|8618600000010|0085217000002|18600000010|17000002|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000010:2,100,9500;8600000010:2,400,9500|0:0,0,0|0:1,60,50;0:1,6,20|1:2,100;38:2,400|1|1|1|-1|||||0551|0556|0556||||00852|00852|00852||120|4|1||||||||100|400||100|1|38|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_10]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[过程中余额不足，反算正确]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance =200,free_balance =200  where acct_balance_id in(38100003)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638100003|055638100003|055638100000|||20130528223511|600|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130905163251|OCS|||100|8655638100003|8655638100003|8655638100000|055638100003|055638100000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38100003:2,200,0|0:0,0,0|0:1,60,30|-1:2,300|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||600|1|1||||||||200|||200|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_14]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[被叫计费，被叫不漫游（被叫计费一般只支持手机号码，）]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000011]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000011|18600000010|18600000011|||20130528223511|600|1|2|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130905170729|OCS|||101|8618600000011|8618600000010|8618600000011|18600000010|18600000011|2||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000011:2,500,9500|0:0,0,0|0:1,60,50|2:2,500|1|1|1|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||600|1|1||||||||500|||500|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_15]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[被叫计费，被叫省内漫游（被叫计费一般只支持手机号码）]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000012]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1551||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000012|18600000010|18600000012|||20130528223511|600|1|2|3|1556|1556|1556|2|20090528223511|1551|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130905171459|OCS|||101|8618600000012|8618600000010|8618600000012|18600000010|18600000012|2||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000012:2,200,9800|0:0,0,0|0:1,60,20|2:2,200|1|1|1|-1||1556|1556||0551|0556|0556|1551|1551||0551|0556|0551||600|2|2||||||||200|||200|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_16]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[被叫计费，被叫省际漫游（被叫计费一般只支持手机号码）]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1234568||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000013|18600000004|18600000013|||20130528223511|600|1|2|3|1556|1556|1556|2|20090528223511|1234568|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130905175324|OCS|||101|8618600000013|8618600000004|8618600000013|18600000004|18600000013|2||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000013:2,200,9800|0:0,0,0|0:1,60,20|2:2,200|1|1|1|-1||1556|1556||0551|0556|0556|1234568|1234568||0551|0556|0371||600|3|3||||||||200|||200|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_17]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[被叫计费，被叫不漫游，余额不足最小计费单位]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance =10,free_balance =10  where acct_balance_id in(8600000014)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000014|18600000004|18600000014|||20130528223511|300|1|2|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130905183517|OCS|||101|8618600000014|8618600000004|8618600000014|18600000004|18600000014|2||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000014:2,10,0|0:0,0,0|0:1,60,50|2:2,250|1|1|1|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||10|||10|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[REF_TYPE=F1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53621]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883621|05568883621|05568883622|||20130528223511|420|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906151942|OCS|||100|865568883621|865568883621|865568883622|05568883621|05568883622|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53621:2,140,9860|0:0,0,0|0:1,60,20|1:2,140|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||420|1|1||||||||140|||140|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[REF_TYPE=G1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53623]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883623|05568883623|05568883624|||20130528223511|420|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906155111|OCS|||100|865568883623|865568883623|865568883624|05568883623|05568883624|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53623:2,217,9783|0:0,0,0|0:1,60,31|1:2,217|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||420|1|1||||||||217|||217|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[闭合群间走（A，-1，-1）类型资费_REF_TYPE=H1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53625]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883625|05568883625|05568883626|||20130528223511|420|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906160042|OCS|||100|865568883625|865568883625|865568883626|05568883625|05568883626|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53625:2,224,9776|0:0,0,0|0:1,60,32|1:2,224|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||420|1|1||||||||224|||224|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[闭合群间走（A，a，-1）类型资费_REF_TYPE=H1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53627]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883627|05568883627|05568883628|||20130528223511|420|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906161351|OCS|||100|865568883627|865568883627|865568883628|05568883627|05568883628|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53627:2,231,9769|0:0,0,0|0:1,60,33|1:2,231|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||420|1|1||||||||231|||231|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[闭合群间走（A，a，b）类型资费_REF_TYPE=H1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53629]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883629|05568883629|05568883630|||20130528223511|420|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906162210|OCS|||100|865568883629|865568883629|865568883630|05568883629|05568883630|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53629:2,238,9762|0:0,0,0|0:1,60,34|1:2,238|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||420|1|1||||||||238|||238|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[闭合群间走（A，b，a）类型资费_REF_TYPE=H1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53632]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883632|05568883632|05568883631|||20130528223511|420|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906163132|OCS|||100|865568883632|865568883632|865568883631|05568883632|05568883631|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53632:2,224,9776|0:0,0,0|0:1,60,32|1:2,224|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||420|1|1||||||||224|||224|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[REF_TYPE=I1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53638]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883638|05568883638|05568883633|||20130528223511|420|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906170457|OCS|||100|865568883638|865568883638|865568883633|05568883638|05568883633|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53638:2,210,9790|0:0,0,0|0:1,60,30|-1:2,210|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||420|1|1||||||||210|||210|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[REF_TYPE=J1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53634]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883634|05568883634|05568883635|||20130528223511|480|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906171503|OCS|||100|865568883634|865568883634|865568883635|05568883634|05568883635|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53634:2,296,9704|0:0,0,0|0:1,60,37|1:2,296|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||480|1|1||||||||296|||296|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IVPN_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[REF_TYPE=K1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=53641]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||05568883641|05568883641|05568883642|||20130528223511|480|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906172447|OCS|||100|865568883641|865568883641|865568883642|05568883641|05568883642|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||53641:2,304,9696|0:0,0,0|0:1,60,38|1:2,304|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||480|1|1||||||||304|||304|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[TFHM_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[主叫是特服，优惠主叫，billing_state为免费，SAP=1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000    ,t.free_balance= 10000    where acct_balance_id  =38103061 ]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103061|055638103061|055638103062|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906174032|OCS|||100|8655638103061|8655638103061|8655638103062|055638103061|055638103062|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103061:2,150,9850|0:0,0,0|0:1,60,30|-1:2,150|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||150|||150|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[TFHM_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[被叫是特服，优惠主叫，billing_state为免费，SAP=1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000    ,t.free_balance= 10000    where acct_balance_id  =38103063 ]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103063|055638103063|055638103064|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906174959|OCS|||100|8655638103063|8655638103063|8655638103064|055638103063|055638103064|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103063:2,150,9850|0:0,0,0|0:1,60,30|-1:2,150|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||150|||150|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[TFHM_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[主叫是特服，优惠被叫，billing_state为免费，SDP=1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000    ,t.free_balance= 10000    where acct_balance_id  =38103066 ]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103066|055638103065|055638103066|||20130528223511|300|1|2|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906180007|OCS|||101|8655638103066|8655638103065|8655638103066|055638103065|055638103066|2||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103066:2,60,9940|0:0,0,0|0:1,60,12|1:2,60|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||60|||60|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[TFHM_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[被叫是特服，优惠被叫，billing_state为免费，SDP=1]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000    ,t.free_balance= 10000    where acct_balance_id  =38103068]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103068|055638103067|055638103068|||20130528223511|300|1|2|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906180833|OCS|||101|8655638103068|8655638103067|8655638103068|055638103067|055638103068|2||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103068:2,60,9940|0:0,0,0|0:1,60,12|1:2,60|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||60|||60|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[VPN_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[拨打亲情号码]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002100]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600002100|18600002100|18600002101|||20130528223511|360|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906184847|OCS|||100|8618600002100|8618600002100|8618600002101|18600002100|18600002101|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600002100:2,60,9940|0:0,0,0|0:1,60,10|2:2,60|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0556|0556|0556||360|1|1||||||||60|||60|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[VPN_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[拨打非亲情号码]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002102]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600002102|18600002102|18600002103|||20130528223511|360|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130906185633|OCS|||100|8618600002102|8618600002102|8618600002103|18600002102|18600002103|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600002102:2,180,9820|0:0,0,0|0:1,60,30|2:2,180|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0556|0556|0556||360|1|1||||||||180|||180|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[VPN_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[拨打集团网内用户]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002106]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600002106|18600002106|18600002107|||20130528223511|360|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909102454|OCS|||100|8618600002106|8618600002106|8618600002107|18600002106|18600002107|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600002106:2,60,9940|0:0,0,0|0:1,60,10|2:2,60|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0556|0556|0556||360|1|1||||||||60|||60|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[VPN_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[拨打集团网外用户]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002104]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600002104|18600002104|18674460002|||20130528223511|360|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909104508|OCS|||100|8618600002104|8618600002104|8618674460002|18600002104|18674460002|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600002104:2,180,1220|0:0,0,0|0:1,60,30|2:2,180|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0551|0556|0556||360|1|1||||||||180|||180|2||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[acctrel_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[账务关系表中用户只有一条账务关系记录]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=38103004]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103004|055638103004|055638103000|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909110903|OCS|||100|8655638103004|8655638103004|8655638103000|055638103004|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103004:2,150,9850|0:0,0,0|0:1,60,30|-1:2,150|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||150|||150|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[acctrel_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[账务关系表中用户没有账务关系记录]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=38103005]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103005|055638103005|055638103000|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[acctrel_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[账务关系表中用户有多条账务关系记录，按优先级获取支付计划，优先级不同]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance=10000,t.free_balance=10000 where  t.acct_balance_id in (38103006)]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance=20000,t.free_balance=20000 where  t.acct_balance_id in (381030061)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103006|055638103006|055638103000|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909113444|OCS|||100|8655638103006|8655638103006|8655638103000|055638103006|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||381030061:2,150,19850|0:0,0,0|0:1,60,30|-1:2,150|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||150|||150|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[acctrel_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[账务关系表中用户有多条账务关系记录，按优先级获取支付计划，优先级相同]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance=10000,t.free_balance=10000 where  t.acct_balance_id in (38103007)]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance=30000,t.free_balance=30000 where  t.acct_balance_id in (381030071)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103007|055638103007|055638103000|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909121356|OCS|||100|8655638103007|8655638103007|8655638103000|055638103007|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103007:2,150,9850|0:0,0,0|0:1,60,30|-1:2,150|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||150|||150|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[acctrel_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[账务关系表中用户有多条账务关系记录，需要匹配账目类型]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance=10000,t.free_balance=10000 where  t.acct_balance_id in (38103008)]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance=40000,t.free_balance=40000 where  t.acct_balance_id in (381030081)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103008|055638103008|055638103000|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909153633|OCS|||100|8655638103008|8655638103008|8655638103000|055638103008|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||381030081:2,135,39865|0:0,0,0|0:1,60,27|7:2,135|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||135|||135|7||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[acctrel_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[账务关系表中用户有一条账务关系记录，但是该记录已经失效]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000,exp_date=to_date('07-03-2007 16:10:55', 'dd-mm-yyyy hh24:mi:ss')  where acct_balance_id=38103009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103009|055638103009|055638103000|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[acctrel_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[账务关系表中用户有一条账务关系记录，但是该记录还没生效]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000,eff_date=to_date('07-03-2027 16:10:55', 'dd-mm-yyyy hh24:mi:ss')  where acct_balance_id=38103010]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638103010|055638103010|055638103000|||20130528223511|300|1|1|3|1556|1556|1556|2|20090528223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[b08acctr_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN长途，两个段落，账目类型不一致，使用同一个账本]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 10000,free_balance =10000  where acct_balance_id = 38100016]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[123456||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638100016|055638100016|07555181001|||20130528223511|600|1|1|3|1556|1556|1556|2|20090528223511|123456|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909161554|OCS|||100|8655638100016|8655638100016|867555181001|055638100016|07555181001|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38100016:2,500,9200;38100016:2,300,9200|0:0,0,0|0:1,6,5;0:1,60,30|2:2,500;1:2,300|1|1|3|-1||1556|1556||0551|0556|0556|123456|123456||020|0755|0755||600|3|1||||||||500|300||500|2|1|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[b08acctr_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN长途，两个段落，账目类型不一致，使用不同的账本（专款专用）]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 10000,free_balance =10000  where acct_balance_id in(38110017)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 10000,free_balance =10000  where acct_balance_id in(38100017)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[123456||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638100017|055638100017|07555181001|||20130528223511|600|1|1|3|1556|1556|1556|2|20090528223511|123456|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909162724|OCS|||100|8655638100017|8655638100017|867555181001|055638100017|07555181001|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38110017:2,500,9500;38100017:2,200,9800|0:0,0,0|0:1,6,5;0:1,60,20|2:2,500;10:2,200|1|1|3|-1||1556|1556||0551|0556|0556|123456|123456||020|0755|0755||600|3|1||||||||500|200||500|2|10|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[b08acctr_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN长途，两个段落，其中一个段落免费，账目类型不一致，使用不同的账本（专款专用）]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=38100018]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=38110018]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[123456||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||055638100018|055638100018|07555181001|||20130528223511|600|1|1|3|1556|1556|1556|2|20090528223511|123456|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909163448|OCS|||100|8655638100018|8655638100018|867555181001|055638100018|07555181001|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38100018:2,200,9800;38110018:2,0,10000|0:0,0,0|0:1,60,20;0:1,60,0|10:2,200;2:2,0|1|1|3|-1||1556|1556||0551|0556|0556|123456|123456||020|0755|0755||600|3|1||||||||200|0||200|10|2|||2||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[b08acctr_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN漫游，三个段落，账目类型不一致，使用相同的账本]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000124]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[123456||scp001.chinatelecom.com;1207666037;191744830;3681;65637|||18600000124|18600000124|07555181001|||20130528223511|330|1|1|3|1817|1817|1817|2|20090528223511|123456|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909171646|OCS|||100|8618600000124|8618600000124|867555181001|18600000124|07555181001|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000124:2,120,9195;8600000124:2,385,9195;8600000124:2,300,9195|0:0,0,0|0:1,60,20;0:1,6,7;0:1,60,50|20:2,120;37:2,385;1:2,300|1|1|1|-1||1817|1817||0556|0556|0557|123456|123456||020|0755|0755||330|3|3||||||||120|385|300|120|20|37|1||2||0|0|0|]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[按流量计费消息]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000137]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|0|0|0|10240|0|0|10240|10240|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|39|||18600000137|18600000137|18600000137|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130909184217|OCS|||200|18600000137|18600000137|8613848100202|18600000137|13848100202|1||||Offline201309091842170510000000000000000000||||8600000137:2,200,9800|0:0,0,0||2:2,200|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|39|200|||200|2||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[初始余额不足申请流量，反算正确]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 280,free_balance =280  where acct_balance_id  in(8600000138)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|0|0|0|20480|0|0|20480|20480|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|39|||18600000138|18600000138|18600000138|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130910100404|OCS|||200|18600000138|18600000138|8613848100202|18600000138|13848100202|1||||Offline201309101004045970000000000000000000||||8600000138:2,280,0|0:0,0,0||2:2,400|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|39|280|||280|2||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG按流量计费先上报时长]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000144]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|3600|0|0|11265|3600|0|11265|11265|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|39|||18600000144|18600000144|18600000144|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130910104521|OCS|||200|18600000144|18600000144|8613848100202|18600000144|13848100202|1||||Offline201309101045212740000000000000000000||||8600000144:2,240,9760|0:0,0,0||2:2,240|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|39|240|||240|2||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG按上行流量计费只上报上行流量]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000145]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|3600|11265|0||3600|11265|0||192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|1600|||18600000145|18600000145|18600000145|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130910110232|OCS|||200|18600000145|18600000145|8613848100202|18600000145|13848100202|1||||Offline201309101102329690000000000000000000||||8600000145:2,20,9980|0:0,0,0||2:2,20|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|1600|20|||20|2||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_10]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG按下行流量计费上报下行流量]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000146]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|3600|0|11265||3600|0|11265||192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|40|||18600000146|18600000146|18600000146|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130910111513|OCS|||200|18600000146|18600000146|8613848100202|18600000146|13848100202|1||||Offline201309101115139330000000000000000000||||8600000146:2,120,9880|0:0,0,0||2:2,120|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|40|120|||120|2||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[按时长计费消息]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000140]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|660|0|11265||660|0|11265||192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|15|||18600000140|18600000140|18600000140|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130910112759|OCS|||200|18600000140|18600000140|8613848100202|18600000140|13848100202|1||||Offline201309101127593380000000000000000000||||8600000140:2,220,9780|0:0,0,0||2:2,220|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|15|220|||220|2||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[初始余额不足申请时长，插入欠费]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 50,free_balance =50  where acct_balance_id  in(8600000141)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|660|0|11265||660|0|11265||192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|15|||18600000141|18600000141|18600000141|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130910113508|OCS|||200|18600000141|18600000141|8613848100202|18600000141|13848100202|1||||Offline201309101135086000000000000000000000||||8600000141:2,50,0|0:0,0,0||2:2,220|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|15|50|||50|2||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG按时长计费先上报流量]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000143]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|0|20110302223511|660|0|11265|11265|660|0|11265|11265|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20110302223511|15|||18600000143|18600000143|18600000143|13848100202|103|4|123|1||]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130910114407|OCS|||200|18600000143|18600000143|8613848100202|18600000143|13848100202|1||||Offline201309101144073130000000000000000000||||8600000143:2,18,9982|0:0,0,0||39:2,18|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|15|18|||18|39||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN业务，配置段落打折，全在优惠区间批价]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000 ,t.free_balance=10000 where acct_balance_id  = 38103052 ]]></string>
+        <string><![CDATA[update ratable_history set value=21000   where  base_resource_code in ('V16') and owner_id =2649]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|20100228223511||055638103052|055638103052|055638103000|||20100228223511|600|1|1|3|1556|1556|1556|2|20100228223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100228223511|OCS|||100|8655638103052|8655638103052|8655638103000|055638103052|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103052:2,100,9900|V16:1,600,21600|0:1,60,20|1:2,100|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||600|1|1||||||||100|||100|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN业务，配置段落打折，跨两个优惠区间批价]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000 ,t.free_balance=10000 where acct_balance_id  = 38103053 ]]></string>
+        <string><![CDATA[update ratable_history set value=17820   where  base_resource_code in ('V16') and owner_id =2652]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|20100228223511||055638103053|055638103053|055638103000|||20100228223511|600|1|1|3|1556|1556|1556|2|20100228223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100228223511|OCS|||100|8655638103053|8655638103053|8655638103000|055638103053|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103053:2,190,9810|V16:1,600,18420|0:1,60,20|1:2,190|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||600|1|1||||||||190|||190|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN业务，配置段落打折，跨两个优惠区间批价，用户余额不够预占]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 50 ,t.free_balance=50 where acct_balance_id  = 38103054 ]]></string>
+        <string><![CDATA[update ratable_history set value=17820   where  base_resource_code in ('V16') and owner_id =2655]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|20100228223511||055638103054|055638103054|055638103000|||20100228223511|600|1|1|3|1556|1556|1556|2|20100228223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100228223511|OCS|||100|8655638103054|8655638103054|8655638103000|055638103054|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||38103054:2,50,0|V16:1,600,18420|0:1,60,20|1:2,190|1|1|3|-1||1556|1556||0551|0556|0556|1556|1556||0551|0556|0556||600|1|1||||||||50|||50|1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG业务，配置段落打折，全在优惠区间批价]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000 ,t.free_balance=10000 where acct_balance_id  = 8600001021  ]]></string>
+        <string><![CDATA[update ratable_history set value=614400     where  base_resource_code in ('V17') and owner_id =2669]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|20100202223511|20100202223511|660|20480|0|20480|660|20480|0|20480|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20100202223511|10|||18600001021|18600001021|18600001021|13848100202|103|4|123|1||20100202223511]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100202223511|OCS|||200|18600001021|18600001021|8613848100202|18600001021|13848100202|1||||Offline201309111109493700000000000000000000||||8600001021:2,300,9700|V17:4,20480,634880||1:2,300|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|10|300|||300|1||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG业务，配置段落打折，跨两个优惠区间批价]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000 ,t.free_balance=10000 where acct_balance_id  = 8600001022  ]]></string>
+        <string><![CDATA[update ratable_history set value=604160      where  base_resource_code in ('V17') and owner_id =2673]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|20100202223511|20100202223511|660|20480|0|20480|660|20480|0|20480|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20100202223511|10|||18600001022|18600001022|18600001022|13848100202|103|4|123|1||20100202223511]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100202223511|OCS|||200|18600001022|18600001022|8613848100202|18600001022|13848100202|1||||Offline201309111318588890000000000000000000||||8600001022:2,600,9400|V17:4,20480,624640||1:2,600|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|10|600|||600|1||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS业务，配置段落打折，在优惠区间批价]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000    ,t.free_balance= 10000    where acct_balance_id  =38103056 ]]></string>
+        <string><![CDATA[update ratable_history set value=305      where  base_resource_code in ('V18') and owner_id =2682]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|055638103056|055638103000|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8655638103000|055638103056|055638103000|||||Offline201309111650133440000000000000000000||||38103056:2,5,9995|V18:3,1,306||1:2,5|1|1|3|-1|||5|||5|1|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_10]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS业务，配置段落打折，不在优惠区间批价]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 10000    ,t.free_balance= 10000    where acct_balance_id  =38103057 ]]></string>
+        <string><![CDATA[update ratable_history set value=10     where  base_resource_code in ('V18') and owner_id =2685]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|055638103057|055638103000|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8655638103000|055638103057|055638103000|||||Offline201309111708346880000000000000000000||||38103057:2,10,9990|V18:3,1,11||1:2,10|1|1|3|-1|||10|||10|1|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[disct_11]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS业务，配置段落打折，跨两个优惠区间批价，用户余额不够预占]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE t set t.balance = 8    ,t.free_balance= 8    where acct_balance_id  =38103058 ]]></string>
+        <string><![CDATA[update ratable_history set value=40     where  base_resource_code in ('V18') and owner_id =2688]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|055638103058|055638103000|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8655638103000|055638103058|055638103000|||||Offline201309111713596400000000000000000000||||38103058:2,8,0|V18:3,1,41||1:2,10|1|1|3|-1|||8|||8|1|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ismp_service_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[ISMP会话计费，不批价，实扣成功]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002020]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600002020|4|1|2|400|20120601000000|1|7001c|0||4|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20130527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120601000000|OCS|||400|8618600002020|8618600002020|86121231700|18600002020||1||||Offline201309111816049510000000000000000000||||8600002020:2,400,9600|||555:2,400|1|1|1|-1||0||||||400|||400|555||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ismp_service_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[ISMP会话计费，不批价，initial时余额不足]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 20,free_balance =20  where acct_balance_id in(8600002022)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600002022|4|1|2|200|20120601000000|1|7001c|0||4|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20130527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120601000000|OCS|||400|8618600002022|8618600002022|86121231700|18600002022||1||||Offline201309111826317010000000000000000000||||8600002022:2,20,0|||555:2,200|1|1|1|-1||0||||||20|||20|555||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[M资费，扣免费M资源]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000107]]></string>
+        <string><![CDATA[delete from  ratable_history t where t.owner_id = 18600000107]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000107|4|1|2||20120601000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20130527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120601000000|OCS|||400|8618600000107|8618600000107|86121231700|18600000107||1||||Offline201309111932567220000000000000000000||||8600000107:2,0,10000|M01:9,20,20||2:7,0|1|1|1|-1||0||||||0|||0|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[M资费，免费资源不足，转换部分金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000108]]></string>
+        <string><![CDATA[update ratable_history t set t.value =45  where t.owner_id = 18600000108 and t.base_resource_code = 'M01']]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000108|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20130527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000108|8618600000108|86121231700|18600000108||1||||Offline201309121026022320000000000000000000||||8600000108:2,1500,8500|M01:9,20,65||2:2,1500|1|1|1|-1||0||||||1500|||1500|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[T资费，免费资源为0，全部转换为金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000109]]></string>
+        <string><![CDATA[update ratable_history t set t.value =50  where t.owner_id = 18600000109 and t.base_resource_code = 'T01']]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000109|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000109|8618600000109|86121231700|18600000109||1||||Offline201309121126388860000000000000000000||||8600000109:2,100,9900|T01:0,5,55||2:2,100|1|1|1|-1||0||||||100|||100|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[T+金钱资费，免费资源足够]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000120]]></string>
+        <string><![CDATA[delete from  ratable_history t where t.owner_id = 18600000120]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000120|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000120|8618600000120|86121231700|18600000120||1||||Offline201309121145340590000000000000000000||||8600000120:2,10,9990|T01:0,5,5||2:2,10;2:8,0|1|1|1|-1||0||||||10|||10|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[T+金钱资费，免费资源不足，转换部分金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000121]]></string>
+        <string><![CDATA[update ratable_history t set t.value =46  where t.owner_id = 18600000121 and t.base_resource_code = 'T01']]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000121|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000121|8618600000121|86121231700|18600000121||1||||Offline201309121203541110000000000000000000||||8600000121:2,30,9970|T01:0,5,51||2:2,30|1|1|1|-1||0||||||30|||30|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[T+金钱资费，用户免费资源不足，T账本余额不足，部分转换为金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 1,free_balance =1  where acct_balance_id in(8610000122)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 10000,free_balance =10000  where acct_balance_id in(8600000122)]]></string>
+        <string><![CDATA[update ratable_history t set t.value =48  where t.owner_id = 18600000122 and t.base_resource_code = 'T01']]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000122|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000122|8618600000122|86121231700|18600000122||1||||Offline201309121212342690000000000000000000||||8600000122:2,70,9930|T01:0,5,53||2:2,70|1|1|1|-1||0||||||70|||70|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[T+金钱资费，用户有T账本余额不足，转换部分金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 4,free_balance =4  where acct_balance_id in(8610000110)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 10000,free_balance =10000  where acct_balance_id in(8600000110)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000110|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000110|8618600000110|86121231700|18600000110||1||||Offline201309121531238920000000000000000000||||8610000110:8,4,0;8600000110:2,30,9970|0:0,0,0||2:8,4;2:2,30|1|1|1|-1||0||||||4|30||4|2|2|||||||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[M资费，无优惠，有M/T账本，扣M/T账本成功]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 20,free_balance =20  where acct_balance_id in(8610000111)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 10000,free_balance = 10000 where acct_balance_id in(8600000111)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000111|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000111|8618600000111|86121231700|18600000111||1||||Offline201309121555524530000000000000000000||||8610000111:7,20,0|0:0,0,0||2:7,20|1|1|1|-1||0||||||20|||20|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[M资费，无优惠，无M/T账本，转换金钱成功]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000123]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000123|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000123|8618600000123|86121231700|18600000123||1||||Offline201309121603547380000000000000000000||||8600000123:2,2000,8000|0:0,0,0||2:2,2000|1|1|1|-1||0||||||2000|||2000|2||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[mt_10]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[用户有M/T账本，批价出来的T值大于M/T账本内的T余额，用户金钱不足]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 1,free_balance =1  where acct_balance_id = 8610000116]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 10,free_balance =10  where acct_balance_id in(8600000116)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000116|4|1|2||20090701000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20090701000000|OCS|||400|8618600000116|8618600000116|86121231700|18600000116||1||||Offline201309121611556430000000000000000000||||8610000116:8,1,0;8600000116:2,10,0|0:0,0,0||2:8,1;2:2,180|1|1|1|-1||0||||||1|10||1|2|2|||||||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN业务：赠送100分钟时长，超过部分100元封顶，使用免费资源]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=0  where  base_resource_code in ('S01')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S02')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=20000, free_balance=20000 where acct_balance_id=8600000907]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|20100228223511||18600000907|18600000907|055638103000|||20100228223511|360|1|1|3|1556|1556|1556|2|20100228223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100228223511|OCS|||100|8618600000907|8618600000907|8655638103000|18600000907|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000907:2,0,20000|S01:2,6,6|0:1,60,0|7401:2,0|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0551|0556|0556||360|1|1||||||||0|||0|7401||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN业务：赠送100分钟时长，超过部分100元封顶，使用部分免费资源]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=99 where  base_resource_code in ('S01')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S02')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=20000, free_balance=20000 where acct_balance_id=8600000907]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|20100228223511||18600000907|18600000907|055638103000|||20100228223511|300|1|1|3|1556|1556|1556|2|20100228223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100228223511|OCS|||100|8618600000907|8618600000907|8655638103000|18600000907|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000907:2,80,19920|S01:2,5,104;S02:5,80,80|0:1,60,0;0:1,60,20|7401:2,80|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||80|||80|7401||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[IN业务：赠送100分钟时长，超过部分100元封顶，未使用免费资源，跨封顶值，部分费用折扣]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=100 where  base_resource_code in ('S01')]]></string>
+        <string><![CDATA[update ratable_history set value=9980 where  base_resource_code in ('S02')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=20, free_balance=20 where acct_balance_id=8600000907]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|20100228223511||18600000907|18600000907|055638103000|||20100228223511|300|1|1|3|1556|1556|1556|2|20100228223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100228223511|OCS|||100|8618600000907|8618600000907|8655638103000|18600000907|055638103000|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||8600000907:2,20,0|S01:2,5,105;S02:5,100,10080|0:1,60,20|7401:2,20|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0551|0556|0556||300|1|1||||||||20|||20|7401||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS业务：赠送30条免费短信，超出部分10元封顶，使用免费资源]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S03')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S04')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|18600000908|13576543456|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8613576543456|18600000908|13576543456|||||Offline201309121721322070000000000000000000||||8600000908:2,0,10000|S03:3,1,1||7403:2,0|1|1|1|-1|||0|||0|7403|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS业务：免费资源使用完，累计金额未达封顶值]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=30 where  base_resource_code in ('S03')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S04')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|18600000908|13576543456|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8613576543456|18600000908|13576543456|||||Offline201309121734069670000000000000000000||||8600000908:2,5,9995|S04:5,5,5;S03:3,1,31||7403:2,5|1|1|1|-1|||5|||5|7403|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS业务：免费资源使用完，累计金额已达封顶值]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=30 where  base_resource_code in ('S03')]]></string>
+        <string><![CDATA[update ratable_history set value=999 where  base_resource_code in ('S04')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|18600000908|13576543456|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8613576543456|18600000908|13576543456|||||Offline201309121746481260000000000000000000||||8600000908:2,1,9999|S04:5,5,1004;S03:3,1,31||7403:2,1|1|1|1|-1|||1|||1|7403|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[ISMP业务：赠送免费次数5次，超出部分20元封顶，使用免费资源]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S05')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S06')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000908|4|1|2||20091001000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8618600000908|8618600000908|86121231700|18600000908||1||||Offline201309121759383800000000000000000000||||8600000908:2,0,10000|S05:3,1,1||7405:2,0|1|1|1|-1||0||||||0|||0|7405||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[ISMP业务：赠送免费次数5次，超出部分20元封顶，部分收费，部分封顶后免费]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=5 where  base_resource_code in ('S05')]]></string>
+        <string><![CDATA[update ratable_history set value=100 where  base_resource_code in ('S06')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+        <string><![CDATA[delete from top_value_cumulate where prd_inst_id=18600000908]]></string>
+        <string><![CDATA[insert into top_value_cumulate (TOP_VALUE_CUMULATE_ID,PRD_INST_ID,LATN_ID,BILLING_CYCLE_BEGIN,BILLING_CYCLE_END,PRODUCT_ID,SPC_PRD_ID,BALANCE,SERVICE_NBR,AREA_CODE,TYPE) values(186908,18600000908,556,20091001,20091031,501004112,186908,1990,18600000908,'0556',1)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[18600000908|4|1|2||20091001000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8618600000908|8618600000908|86121231700|18600000908||1||||Offline201309121838208850000000000000000000||||8600000908:2,100,9900|S06:5,100,200;S05:3,1,6||7405:2,100|1|1|1|-1||0||||||100|||100|7405||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[DSL业务：赠送免费时长300分钟，10元封顶，使用免费资源]]></caseDesc>
+      <caseType><![CDATA[WLAN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S07')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S08')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[201106||18600000908|3660||2|0|0|0|20080808210100000|20110623154623|1200|3660|0|0|0|0|WLAN001.chinatelecom.;1207666037;191744830;3681:65637|0001.0556.556.00.460|192.0.0.27|19|34604024|175.184.164.76|||1|0556|00|1|556|0556|1|2|0|192.168.0.2|192.0.0.27||175.184.164.76||4e02ed1296623f10xxxx||1002]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20080808210100|OCS|||250|8618600000908|8618600000908||18600000908||1||||WLAN001.chinatelecom.;1207666037;191744830;3681:65637|20110623154623|||8600000908:2,0,10000|S07:2,61,61||7407:2,0|1|3|1|-1|1002||||0|||0|7407||||18600000908||1|3660|0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_10]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[DSL业务：赠送免费时长300分钟，使用部分免费资源，部分收费]]></caseDesc>
+      <caseType><![CDATA[WLAN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=299 where  base_resource_code in ('S07')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S08')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[201106||18600000908|3660||2|0|0|0|20080808210100000|20110623154623|1200|120|0|0|0|0|WLAN001.chinatelecom.;1207666037;191744830;3681:65637|0001.0556.556.00.460|192.0.0.27|19|34604024|175.184.164.76|||1|0556|00|1|556|0556|1|2|0|192.168.0.2|192.0.0.27||175.184.164.76||4e02ed1296623f10xxxx||1002]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20080808210100|OCS|||250|8618600000908|8618600000908||18600000908||1||||WLAN001.chinatelecom.;1207666037;191744830;3681:65637|20110623154623|||8600000908:2,50,9950|S07:2,2,301;S08:5,50,50||7407:2,50|1|3|1|-1|1002||||50|||50|7407||||18600000908||1|120|0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_11]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[DSL业务：赠送免费时长300分钟，部分收费，部分封顶后免费]]></caseDesc>
+      <caseType><![CDATA[WLAN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=300 where  base_resource_code in ('S07')]]></string>
+        <string><![CDATA[update ratable_history set value=950 where  base_resource_code in ('S08')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[201106||18600000908|3660||2|0|0|0|20080808210100000|20110623154623|1200|120|0|0|0|0|WLAN001.chinatelecom.;1207666037;191744830;3681:65637|0001.0556.556.00.460|192.0.0.27|19|34604024|175.184.164.76|||1|0556|00|1|556|0556|1|2|0|192.168.0.2|192.0.0.27||175.184.164.76||4e02ed1296623f10xxxx||1002]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20080808210100|OCS|||250|8618600000908|8618600000908||18600000908||1||||WLAN001.chinatelecom.;1207666037;191744830;3681:65637|20110623154623|||8600000908:2,50,9950|S07:2,2,302;S08:5,100,1050||7407:2,50|1|3|1|-1|1002||||50|||50|7407||||18600000908||1|120|0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_12]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG业务按时长计费，前300分钟免费，500元封顶，使用免费资源]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S09')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S10')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|20100202223511|20100202223511|3660|20480|0|20480|3660|20480|0|20480|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20100202223511|14|||18600000908|18600000908|18600000908|13848100202|103|4|123|1||20080808220100000]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20080808220100000|OCS|||200|18600000908|18600000908|8613848100202|18600000908|13848100202|1||||Offline201309131630417940000000000000000000||||8600000908:2,0,10000|S09:2,61,61||7409:2,0|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|14|0|||0|7409||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_13]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG业务按时长计费，前300分钟免费，500元封顶，使用部分免费资源]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=299 where  base_resource_code in ('S09')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S10')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|20100202223511|20100202223511|120|20480|0|20480|120|20480|0|20480|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20100202223511|14|||18600000908|18600000908|18600000908|13848100202|103|4|123|1||20080808220100000]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20080808220100000|OCS|||200|18600000908|18600000908|8613848100202|18600000908|13848100202|1||||Offline201309131702415330000000000000000000||||8600000908:2,10,9990|S09:2,2,301;S10:5,10,10||7409:2,10|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|14|10|||10|7409||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ratable_DL_14]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[CCG业务按流量计费，赠送免费流量1G]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S11')]]></string>
+        <string><![CDATA[update ratable_history set value=0 where  base_resource_code in ('S12')]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600000908]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|20100202223511|20100202223511|120|102400000|0|102400000|120|102400000|0|102400000|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20100202223511|39|||18600000908|18600000908|18600000908|13848100202|103|4|123|1||20080808220100000]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20080808220100000|OCS|||200|18600000908|18600000908|8613848100202|18600000908|13848100202|1||||Offline201309131717371800000000000000000000||||8600000908:2,0,10000|S11:4,102400000,102400000||7411:2,0|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|39|0|||0|7411||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[sms_write_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS请求扣费消息添加余额扣成负标识，余额充足，扣费成功]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002059]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|18600002059|13576543456|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8613576543456|18600002059|13576543456|||||Offline201309131751267660000000000000000000||||8600002059:2,10,9990|0:0,0,0||2:2,10|1|1|1|-1|||10|||10|2|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[sms_write_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[SMS请求扣费消息添加余额扣成负标识，余额不足，扣费成功]]></caseDesc>
+      <caseType><![CDATA[]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance = 5,free_balance =5  where acct_balance_id in(8600002060)]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|18600002060|13576543456|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8613576543456|18600002060|13576543456|||||Offline201309131816326460000000000000000000||||8600002060:2,5,0|0:0,0,0||2:2,10|1|1|1|-1|||5|||5|2|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[sms_write_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[短信扣费，SmsRefundFlag=1，写扣费历史表成功]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002064]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|18600002064|13576543456|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8613576543456|18600002064|13576543456|||||Offline201309131924548170000000000000000000||||8600002064:2,10,9990|0:0,0,0||2:2,10|1|1|1|-1|||10|||10|2|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[sms_write_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[短信补款，SmsRefundFlag=1，根据扣费历史表补款成功]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10000, free_balance=10000 where acct_balance_id=8600002064]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1|0|0|18600002064|13576543456|20100208090000000|1|0|5||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||302|0|0|8613576543456|18600002064|13576543456|||||Offline201309131928018640000000000000000000||||8600002064:2,-10,10000|0:0,0,0||2:2,-10|1|1|1|-1|||-10|||-10|2|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID匹配，R411、R402匹配替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|999000|0|xiaohe|20090527000000|121231700|900]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221536597020000000000000000000||||31360016:2,50,950|0:0,0,0||987:2,50|1|1|1|-1||0||||||50|||50|987|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+   <entry>
+    <string><![CDATA[bj3272_oth_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID匹配，R411不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|999000|0|xiaohe|20090527000000|121231700|700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221546500910000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID匹配，R402不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|91|1|666667|ABDCKD_1231_AKLLJ|999000|0|xiaohe|20090527000000|121231700|900]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221556030920000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||91|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID匹配，R411、R402不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|91|1|666667|ABDCKD_1231_AKLLJ|999000|0|xiaohe|20090527000000|121231700|700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221603098100000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||91|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+   <entry>
+    <string><![CDATA[bj3272_oth_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID不匹配，R411、R402匹配替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|888000|0|xiaohe|20090527000000|121231700|900]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221611001220000000000000000000||||31360016:2,50,950|0:0,0,0||987:2,50|1|1|1|-1||0||||||50|||50|987|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID不匹配，R411不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|888000|0|xiaohe|20090527000000|121231700|700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221614453170000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID不匹配，R402不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|91|1|666667|ABDCKD_1231_AKLLJ|888000|0|xiaohe|20090527000000|121231700|900]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221618285510000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||91|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID不匹配，R411、R402不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|91|1|666667|ABDCKD_1231_AKLLJ|888000|0|xiaohe|20090527000000|121231700|700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221621311960000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||91|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID默认值，R411、R402匹配替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|900]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221627273490000000000000000000||||31360016:2,50,950|0:0,0,0||987:2,50|1|1|1|-1||0||||||50|||50|987|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_10]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID默认值，R411不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221633093170000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_11]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID默认值，R402不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|91|1|666667|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|900]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221635198580000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||91|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_12]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[PRODUCT_ID默认值，R411、R402不匹配不替换账目类型]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|91|1|666667|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221639277170000000000000000000||||31360016:2,50,950|0:0,0,0||2:2,50|1|1|1|-1||0||||||50|||50|2|||||91|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_13]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[表中R406相同R411或R402不同]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|999001|0|xiaohe|20090527000000|121231700|800]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221647258390000000000000000000||||31360016:2,50,950|0:0,0,0||876:2,50|1|1|1|-1||0||||||50|||50|876|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_14]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[表中R406不同R411、R402相同]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|999002|0|xiaohe|20090527000000|121231700|800]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221654414710000000000000000000||||31360016:2,50,950|0:0,0,0||654:2,50|1|1|1|-1||0||||||50|||50|654|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_15]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[R406不同R411、R402、优先级为默认值(原流程)]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|999003|0|xiaohe|20090527000000|121231700|600]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221719356610000000000000000000||||31360016:2,50,950|0:0,0,0||555:2,50|1|1|1|-1||0||||||50|||50|555|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_16]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[R406为默认值R411、R402不同]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|500]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221723417440000000000000000000||||31360016:2,50,950|0:0,0,0||666:2,50|1|1|1|-1||0||||||50|||50|666|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_17]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[R411、R402相同R406为默认值(优先级高)和非默认值(优先级低)]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|999004|0|xiaohe|20090527000000|121231700|901]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221750386630000000000000000000||||31360016:2,50,950|0:0,0,0||333:2,50|1|1|1|-1||0||||||50|||50|333|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+   <entry>
+    <string><![CDATA[bj3272_oth_18]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[R411、R402相同R406为默认值和非默认值（先插入），优先级相同]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R406')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|902]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221755270910000000000000000000||||31360016:2,50,950|0:0,0,0||222:2,50|1|1|1|-1||0||||||50|||50|222|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_19]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[R503匹配 R402、R411和默认product_id的R402、R411相同（优先级低于默认记录）]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R503')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|999007|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|801]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221805538370000000000000000000||||31360016:2,50,950|0:0,0,0||123:2,50|1|1|1|-1||0||||||50|||50|123|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3272_oth_20]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[R503不匹配 R402、R411和默认product_id的R402、R411相同（优先级低于默认记录）]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update tb_bil_acct_balance set balance=1000,free_balance=1000  where acct_id =31360016]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from top_value_cumulate  where SERVICE_NBR='13666660016']]></string>
+        <string><![CDATA[delete from tb_rb_config where value ='R503'or value ='R406']]></string>
+        <string><![CDATA[insert into TB_RB_CONFIG (PARAM,ITEM,REMARK,VALUE)values('system','ProductType','prodcut_id','R503')]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13666660016|4|1|2||20091001000000|1|501004112|0|90|1|777000|ABDCKD_1231_AKLLJ|-1|0|xiaohe|20090527000000|121231700|801]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613666660016|8613666660016|86121231700|13666660016||1||||Offline201309221809038860000000000000000000||||31360016:2,50,950|0:0,0,0||124:2,50|1|1|1|-1||0||||||50|||50|124|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3271_oth_33]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[wlan业务，离线话单中携带CU_pulic,根据ssid判断走非优惠费率区]]></caseDesc>
+      <caseType><![CDATA[WLAN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_EVT_PRICING_STRATEGY set event_type_id=1033 where EVENT_PRICING_STRATEGY_ID=707040006]]></string>
+        <string><![CDATA[UPDATE TB_BIL_ACCT_BALANCE T SET T.BALANCE=10000,T.FREE_BALANCE=10000 WHERE T.ACCT_BALANCE_ID=7070180001]]></string>
+        <string><![CDATA[update ratable_history set value=0 where BASE_RESOURCE_CODE='G78']]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[201106||18670000001|600||2|0|0|0|20130408195950000|20110623154623|1200|300|0|0|0|0|WLAN001.chinatelecom.;1207666037;191744830;3681:65637|0001.0556.556.00.460|192.0.0.27|19|34604024|175.184.164.76|||1|0556|00|1|556|0556|1|2|0|192.168.0.2|192.0.0.27||175.184.164.76||4e02ed1296623f10xxxx||1001|CU_pulic]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130408195950|OCS|||250|8618670000001|8618670000001||18670000001||1||||WLAN001.chinatelecom.;1207666037;191744830;3681:65637|20110623154623|||7070180001:2,100,9900|G78:5,100,100||-1:2,100|1|3|1|-1|1001||||100|||100|-1||||18670000001||1|300|0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3271_oth_34]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[wlan业务，离线话单中携带CU_Campus,根据ssid判断走优惠费率区]]></caseDesc>
+      <caseType><![CDATA[WLAN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_EVT_PRICING_STRATEGY set event_type_id=1033 where EVENT_PRICING_STRATEGY_ID=707040006]]></string>
+        <string><![CDATA[UPDATE TB_BIL_ACCT_BALANCE T SET T.BALANCE=10000,T.FREE_BALANCE=10000 WHERE T.ACCT_BALANCE_ID=7070180001]]></string>
+        <string><![CDATA[update ratable_history set value=0 where BASE_RESOURCE_CODE='G78']]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[201106||18670000001|600||2|0|0|0|20130408195950000|20110623154623|1200|300|0|0|0|0|WLAN001.chinatelecom.;1207666037;191744830;3681:65637|0001.0556.556.00.460|192.0.0.27|19|34604024|175.184.164.76|||1|0556|00|1|556|0556|1|2|0|192.168.0.2|192.0.0.27||175.184.164.76||4e02ed1296623f10xxxx||1001|CU_Campus]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130408195950|OCS|||250|8618670000001|8618670000001||18670000001||1||||WLAN001.chinatelecom.;1207666037;191744830;3681:65637|20110623154623|||7070180001:2,0,10000|0:0,0,0||-1:2,0|1|3|1|-1|1001||||0|||0|-1||||18670000001||1|300|0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3271_oth_35]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[wlan业务，离线话单中不携带CU_Campus和CU_pulic,根据ssid判断走非优惠费率区]]></caseDesc>
+      <caseType><![CDATA[WLAN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_EVT_PRICING_STRATEGY set event_type_id=1033 where EVENT_PRICING_STRATEGY_ID=707040006]]></string>
+        <string><![CDATA[UPDATE TB_BIL_ACCT_BALANCE T SET T.BALANCE=10000,T.FREE_BALANCE=10000 WHERE T.ACCT_BALANCE_ID=7070180001]]></string>
+        <string><![CDATA[update ratable_history set value=0 where BASE_RESOURCE_CODE='G78']]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[201106||18670000001|600||2|0|0|0|20130408195950000|20110623154623|1200|300|0|0|0|0|WLAN001.chinatelecom.;1207666037;191744830;3681:65637|0001.0556.556.00.460|192.0.0.27|19|34604024|175.184.164.76|||1|0556|00|1|556|0556|1|2|0|192.168.0.2|192.0.0.27||175.184.164.76||4e02ed1296623f10xxxx||1001|]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20130408195950|OCS|||250|8618670000001|8618670000001||18670000001||1||||WLAN001.chinatelecom.;1207666037;191744830;3681:65637|20110623154623|||7070180001:2,100,9900|G78:5,100,100||-1:2,100|1|3|1|-1|1001||||100|||100|-1||||18670000001||1|300|0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[IN_3270_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[语音业务]]></caseDesc>
+      <caseType><![CDATA[IN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=150, free_balance=150 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1556||scp001.chinatelecom.com;1207666037;191744830;3681;65637|20100228223511||13189890013|13189890013|13179890003|||20100228223511|600|1|1|3|1556|1556|1556|2|20100228223511|1556|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100228223511|OCS|||100|8613189890013|8613189890013|8613179890003|13189890013|13179890003|1||||scp001.chinatelecom.com;1207666037;191744830;3681;65637||||13189013:2,150,0|0:0,0,0|0:1,60,30|-1:2,300|1|1|1|-1||1556|1556||0556|0556|0556|1556|1556||0556|0556|0556||600|1|1||||||||150|||150|-1||||2||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[ccg_3270_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[数据业务]]></caseDesc>
+      <caseType><![CDATA[CCG]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=1000, free_balance=1000 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[3|1|20100202223511|20100202223511|120|204800|0|204800|120|204800|0|204800|192.168.1.1|192.168.1.1|0|0|0|220.206.132.41|0|1|20100202223511|1|||13189890013|13189890013|13189890013|13189890013|103|4|123|1||20080808220100000]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20080808220100000|OCS|||200|13189890013|13189890013|8613189890013|13189890013|13189890013|1||||Offline201309231624183170000000000000000000||||13189013:2,1000,0|0:0,0,0||35:2,2000|1|1|1|-1|192.168.1.1|192.168.1.1|0556|0|0|220.206.132.41|1|1000|||1000|35||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[sms_3270_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[短信业务]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=5, free_balance=5 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[0|0|0|8613189890013|8613189890013|20100208090000000|1|0|4||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||300|0|0|8613189890013|8613189890013|8613189890013|||||Offline201309231653593600000000000000000000||||13189013:2,5,0|0:0,0,0||1:2,100|1|1|1|-1|||5|||5|1|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[sms_3270_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[短信业务补款]]></caseDesc>
+      <caseType><![CDATA[SMS]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=5, free_balance=5 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[1|0|0|8613189890013|8613189890013|20100208090000000|1|0|5||1002|||1|xiaohe|||20100208090000000|20100208090000000|1|1]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100208090000000|OCS|||302|0|0|8613189890013|8613189890013|8613189890013|||||Offline201309241029039730000000000000000000||||13189013:2,-100,105|0:0,0,0||1:2,-100|1|1|1|-1|||-100|||-100|1|||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[vac_3270_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[Vac批价扣费]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from tb_bil_deduct_record_history where service_nbr=13189890013]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=5, free_balance=5 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890013|4|1|2||20091001000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613189890013|8613189890013|86121231700|13189890013||1||||Offline201309241123272070000000000000000000||||13189013:2,5,0|0:0,0,0||3:2,10|1|1|1|-1||0||||||5|||5|3||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[vac_3270_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[Vac批价扣费补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from tb_bil_deduct_record_history where service_nbr=13189890013]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=5, free_balance=5 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890013|5|1|2||20091001000000|1|501004112|1||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||401|8613189890013|8613189890013|86121231700|13189890013||1||||Offline201309241200430010000000000000000000||||13189013:2,-10,15|0:0,0,0||3:2,-10|1|1|1|-1||0||||||-10|||-10|3||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[vac_3270_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[Vac直接扣费]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from tb_bil_deduct_record_history where service_nbr=13189890013]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=5, free_balance=5 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890013|4|1|2|100|20091001000000|1|501004112|0||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||400|8613189890013|8613189890013|86121231700|13189890013||1||||Offline201309241522566060000000000000000000||||13189013:2,5,0|||555:2,100|1|1|1|-1||0||||||5|||5|555||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[vac_3270_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[Vac直接扣费补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from tb_bil_deduct_record_history where service_nbr=13189890013]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=5, free_balance=5 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890013|5|1|2|100|20091001000000|1|501004112|1||1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20090527000000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20091001000000|OCS|||401|8613189890013|8613189890013|86121231700|13189890013||1||||Offline201309241537026460000000000000000000||||13189013:2,-100,105|||555:2,-100|1|1|1|-1||0||||||-100|||-100|555||||||||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+   <entry>
+    <string><![CDATA[Wlan_3270_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[wlan业务]]></caseDesc>
+      <caseType><![CDATA[WLAN]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from tb_bil_deduct_record_history where service_nbr=13189890013]]></string>
+        <string><![CDATA[update TB_BIL_ACCT_BALANCE set balance=10, free_balance=10 where acct_balance_id=13189013]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[200606||13189890013|||2|0|0|0|2010-06-23 15:36:50|2010-06-23 15:56:50|1200|1200|0|0|0|0|WLAN001.chinatelecom.;1207666037;191744830;3681:65637|0001.0556.556.00.460|192.0.0.27|19|34604024|175.184.164.76||||0556|00|1|556|0556|1|2|0|192.168.0.2|192.0.0.27||175.184.164.76||4e02ed1296623f10xxxx||1001]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20100623153650|OCS|||250|8613189890013|8613189890013||13189890013||1||||WLAN001.chinatelecom.;1207666037;191744830;3681:65637|20100623155650|||13189013:2,10,0|0:0,0,0||38:2,33|1|3|1|-1|1001||||10|||10|38||||13189890013||1|1200|0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_01]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M免费累积量和金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',45,'80C',14719)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|xiaohe|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309241800355620000000000000000000||||13189009:2,500,9500|N17:9,10,55;N19:5,500,500||2:2,500|1|1|1|-1||0||||||500|||500|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+   <entry>
+    <string><![CDATA[bj3261_oth_02]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M免费累积量和金钱补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890009','90','500','2','0','N17|10|20120300|556|14719|80C|55|9;N19|500|20120300|556|13189009|80A|500|5;#|1|10|500|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',55,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',500,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9500,free_balance=9500 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|501004112|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309241843585600000000000000000000||||13189009:2,-500,10000|N17:9,-10,45;N19:5,-500,0||2:2,-500|1|1|1|-1||0||||||-500|||-500|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_03]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣T免费累积量和金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',45,'80C',14719)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|02110010101005|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251056271860000000000000000000||||13189009:2,100,9900|N18:0,10,55;N19:5,100,100||2:2,100|1|1|1|-1||0||||||100|||100|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_04]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣T免费累积量和金钱补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890009','90','100','2','0','N18|10|20120300|556|14719|80C|55|9;N19|100|20120300|556|13189009|80A|100|5;#|2|10|100|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',55,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',100,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9900,free_balance=9900 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|02110010101005|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251107592080000000000000000000||||13189009:2,-100,10000|N18:9,-10,45;N19:5,-100,0||2:2,-100|1|1|1|-1||0||||||-100|||-100|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_05]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M免费累积量和增值费(多费用项)]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',0,'80C',14720)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890010|4|1|6||20120320200000|1|02110010101003|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890010|8613189890010|86121231700|13189890010||1||||Offline201309251121043820000000000000000000||||13189009:2,50,9950|N17:9,10,10;N19:5,50,50||2:2,50;2:7,0|1|1|1|-1||0||||||50|||50|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_06]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M免费累积量和增值费(多费用项)补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890010','90','0','7','0','N17|10|20120300|556|14720|80C|10|9;N19|50|20120300|556|13189010|80A|50|5;#|1|10|0|50',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23767','13189009','556','0556','13189890010','90','50','2','0','N17|10|20120300|556|14720|80C|10|9;N19|50|20120300|556|13189010|80A|50|5;#|1|10|0|50',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',10,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',50,'80A',13189010)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9950,free_balance=9950 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890010|5|1|6||20120320200000|1|02110010101003|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890010|8613189890010|86121231700|13189890010||1||||Offline201309251141571330000000000000000000||||13189009:2,-50,10000|N17:9,-10,0;N19:5,-50,0||2:7,0;2:2,-50|1|1|1|-1||0||||||-50|||-50|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_07]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣T转化成金钱和增值费(多费用项)]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',50,'80C',14720)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890010|4|1|6||20120320200000|1|02110010101004|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890010|8613189890010|86121231700|13189890010||1||||Offline201309251149291890000000000000000000||||13189009:2,250,9750|N18:0,10,60;N19:5,250,250||2:2,250|1|1|1|-1||0||||||250|||250|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_08]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣T转化成金钱和增值费补款(多费用项)]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890010','90','250','2','0','N18|10|20120300|556|14720|80C|60|0;N19|250|20120300|556|13189010|80A|250|5;#|2|10|200|50',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',60,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',250,'80A',13189010)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9750,free_balance=9750 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890010|5|1|6||20120320200000|1|02110010101004|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890010|8613189890010|86121231700|13189890010||1||||Offline201309251201506660000000000000000000||||13189009:2,-250,10000|N18:0,-10,50;N19:5,-250,0||2:2,-250|1|1|1|-1||0||||||-250|||-250|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_09]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[免费M累积量已使用完扣金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',50,'80C',14719)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251206469580000000000000000000||||13189009:2,1000,9000|N17:9,10,60;N19:5,1000,1000||2:2,1000|1|1|1|-1||0||||||1000|||1000|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_10]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[免费M累积量已使用完扣金钱补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890009','90','1000','2','0','N17|10|20120300|556|14719|80C|60|9;N19|1000|20120300|556|13189009|80A|1000|5;#|1|10|1000|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',60,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',1000,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9000,free_balance=9000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|501004112|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251214482600000000000000000000||||13189009:2,-1000,10000|N17:9,-10,50;N19:5,-1000,0||2:2,-1000|1|1|1|-1||0||||||-1000|||-1000|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_11]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[免费T累积量已使用完扣金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',50,'80C',14719)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|02110010101005|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251600112130000000000000000000||||13189009:2,200,9800|N18:0,10,60;N19:5,200,200||2:2,200|1|1|1|-1||0||||||200|||200|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_12]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[免费T累积量已使用完扣金钱补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890009','90','200','2','0','N18|10|20120300|556|14719|80C|60|0;N19|200|20120300|556|13189009|80A|200|5;#|2|10|200|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',60,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',200,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9800,free_balance=9800 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|02110010101005|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251609093790000000000000000000||||13189009:2,-200,10000|N18:0,-10,50;N19:5,-200,0||2:2,-200|1|1|1|-1||0||||||-200|||-200|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_13]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M免费累积量]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',10,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',0,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251618450670000000000000000000||||13189007:7,0,0|N17:9,10,20||2:7,0|1|1|1|-1||0||||||0|||0|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_14]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M免费累积量补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189007','556','0556','13189890009','90','0','7','0','N17|10|20120300|556|14719|80C|20|9;#|1|10|0|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',20,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',0,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|501004112|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251625471730000000000000000000||||13189007:7,0,0|N17:9,-10,10||2:7,0|1|1|1|-1||0||||||0|||0|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_15]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣T免费累积量]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',10,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',0,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|02110010101005|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251630072080000000000000000000||||13189008:8,0,0|N18:0,10,20||2:8,0|1|1|1|-1||0||||||0|||0|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_16]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣T免费累积量补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189008','556','0556','13189890009','90','0','8','0','N18|10|20120300|556|14719|80C|20|0;#|2|10|0|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N18',556,'20120300',20,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',0,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|02110010101005|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251636266910000000000000000000||||13189008:8,0,0|N18:0,-10,10||2:8,0|1|1|1|-1||0||||||0|||0|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_17]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[M账本余额为0扣金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',50,'80C',14719)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251641575130000000000000000000||||13189009:2,1000,9000|N17:9,10,60;N19:5,1000,1000||2:2,1000|1|1|1|-1||0||||||1000|||1000|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_18]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[M账本余额为0扣金钱补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890009','90','1000','2','0','N17|10|20120300|556|14719|80C|60|9;N19|1000|20120300|556|13189009|80A|1000|5;#|1|10|1000|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',60,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',1000,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9000,free_balance=9000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|501004112|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251650525270000000000000000000||||13189009:2,-1000,10000|N17:9,-10,50;N19:5,-1000,0||2:2,-1000|1|1|1|-1||0||||||-1000|||-1000|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_19]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M账本和金钱]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',50,'80C',14719)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=5,free_balance=5 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=5,free_balance=5 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=10000,free_balance=10000 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251655363180000000000000000000||||13189007:7,5,0;13189009:2,500,9500|N17:9,10,60;N19:5,500,500||2:7,5;2:2,500|1|1|1|-1||0||||||5|500||5|2|2||||90|||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_20]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[扣M账本和金钱补款]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23768','13189009','556','0556','13189890009','90','500','2','0','N17|10|20120300|556|14719|80C|60|9;N19|500|20120300|556|13189009|80A|500|5;#|1|10|500|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into TB_BIL_DEDUCT_RECORD_HISTORY(RECORD_NO,ACCT_BALANCE_ID,LATN_ID,AREA_CODE,SERVICE_NBR,MSG_TYPE,AMOUNT,UNIT_TYPE_ID,BACK_COUNT,RATABLE_INFOR,CREATE_TIME,ACCT_ITEM_TYPE_ID,SM_ID,IS_CREDIT) values('23767','13189007','556','0556','13189890009','90','5','7','0','N17|10|20120300|556|14719|80C|60|9;N19|500|20120300|556|13189009|80A|500|5;#|1|10|500|0',to_date('22-04-2013 16:45:00','dd-mm-yyyy hh24:mi:ss'),'2','shenzhenvac001','0')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',60,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',500,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=9500,free_balance=9500 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|5|1|6||20120320200000|1|501004112|1|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||401|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251702373770000000000000000000||||13189009:2,-500,10000;13189007:7,-5,5|N17:9,-10,50;N19:5,-500,0||2:2,-500;2:7,-5|1|1|1|-1||0||||||-500|-5||-500|2|2||||90|||0|0||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[bj3261_oth_21]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[余额不足时返回报错]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[delete from ratable_history where base_resource_code in ('N17','N18','N19')]]></string>
+        <string><![CDATA[delete from TB_BIL_DEDUCT_RECORD_HISTORY where SERVICE_NBR in ('13189890009','13189890010')]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N17',556,'20120300',50,'80C',14719)]]></string>
+        <string><![CDATA[insert into ratable_history(base_resource_code,LATN_ID,BILLING_CYCLE_ID,VALUE,OWNER_TYPE,OWNER_ID) values('N19',556,'20120300',0,'80A',13189009)]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189007]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=0,free_balance=0 where acct_id=13189008]]></string>
+        <string><![CDATA[update tb_bil_acct_balance set balance=100,free_balance=100 where acct_id=13189009]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[13189890009|4|1|6||20120320200000|1|501004112|0|90|1|666667|ABDCKD_1231_AKLLJ|7001c|0|shenzhenvac001|20120320200000|121231700]]></string>
+      </input>
+      <stdFullCdr><![CDATA[1|0|20120320200000|OCS|||400|8613189890009|8613189890009|86121231700|13189890009||1||||Offline201309251706278730000000000000000000||||13189009:2,100,0|N17:9,10,60;N19:5,1000,1000||2:2,1000|1|1|1|-1||0||||||100|||100|2|||||90|||0|||]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[]]></string>
+      </input>
+      <stdFullCdr><![CDATA[]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+  <entry>
+    <string><![CDATA[]]></string>
+    <CaseInfo>
+      <caseDesc><![CDATA[]]></caseDesc>
+      <caseType><![CDATA[ISMP]]></caseType>
+      <dbInitSQL>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+        <string><![CDATA[]]></string>
+      </dbInitSQL>
+      <dbBureauInitSQL>
+</dbBureauInitSQL>
+      <input>
+        <string><![CDATA[]]></string>
+      </input>
+      <stdFullCdr><![CDATA[]]></stdFullCdr>
+    </CaseInfo>
+  </entry>
+</linked-hash-map>

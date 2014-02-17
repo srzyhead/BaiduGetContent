@@ -1,0 +1,46 @@
+root:
+  config:ALLAUTO
+ALLAUTO:
+  DBCompareFlag:false
+  TypeToCdrInt:Normal:IN+2|3|4|5;SMS+2|3|5|7^Err:IN-2|3;SMS+2|5|8|9^Trans:IN-1|2;SMS+2|3
+#  TypeToCdrInt:IN:10|11|12|20|21|24|25|40|41|42;SMS:10|11|12|20|21|24|25|27;ISMP:10|11|12|20|21|24|25;CCG:10|11|12|20|21|24|25|27|28|32;WLAN:10|11|12|20|21|24|25
+#  BureauSQL:BureauSQL_ALL
+  BureauSource:DataBase211
+  InMemorySource:DB_ALL_ALTIBASE
+  OracleSource:DB_211_ORACLE
+  CaseInfoSource:DataBase211
+#  CdrDir:/public/occ/test/auto_dcfmt/hgj/output
+#  InputDir:/public/occ/test/auto_dcfmt/hgj/dcfmt_test/src
+  NormalCdrDir:output
+  ErrCdrDir:output1
+  TransCdrDir:output2
+  InputDir:input
+  TypeToFileName:IN:in.r;SMS:sms.r;ISMP:ismp.r;CCG:ccg.r;WLAN:wlan.r
+  CaseNameFile:etc/case.txt
+UpdateTaskIdSQL:
+  IN:update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 21217
+  SMS:update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212171
+  ISMP:update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212172
+  CCG:update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212173
+  WLAN:update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212174
+DB_ALL_ORACLE:
+  URL:jdbc:oracle:thin:ocs/ocs@192.168.1.245:1521:OCS
+  Driver:oracle.jdbc.driver.OracleDriver
+DB_211_ORACLE:
+  URL:jdbc:oracle:thin:ocs/ocs@10.26.13.211:1522:TEST211
+  Driver:oracle.jdbc.driver.OracleDriver
+#DB_ALL_ORACLE:
+#  URL:jdbc:oracle:thin:ocstest30/ocstest30@172.168.1.245:1521:OCS
+#  Driver:oracle.jdbc.driver.OracleDriver
+#DB_AH_ORACLE:
+#  URL:jdbc:oracle:thin:ocs_ah30/ocs_ah30@172.168.1.241:1521:SID
+#  Driver:oracle.jdbc.driver.OracleDriver
+DataBase211:
+  URL:jdbc:oracle:thin:ocs/ocs@10.26.13.211:1522:TEST211
+  Driver:oracle.jdbc.driver.OracleDriver
+DB_ALL_ALTIBASE:
+  URL:jdbc:Altibase://172.168.1.241:20302/mydb?user=ocs&password=ocs&encoding=US7ASCII
+  Driver:Altibase.jdbc.driver.AltibaseDriver
+#DB_AH_TIMESTEN:
+#  URL:jdbc:timesten:direct:au_ah
+#  Driver:com.timesten.jdbc.TimesTenDriver

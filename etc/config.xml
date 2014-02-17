@@ -1,0 +1,110 @@
+<Config>
+	<Param>
+		<Name>root</Name>
+		<Item>
+			<Name>config</Name>
+			<Value>ALLAUTO</Value>
+		</Item>
+	</Param>
+
+	<Param>
+		<Name>ALLAUTO</Name>
+		<Item>
+			<Name>CaseNameFile</Name>
+			<Value>etc/case.txt</Value>
+		</Item>
+		<Item>
+			<Name>CaseInfoFile</Name>
+			<Value>etc/CaseInfo.xml</Value>
+		</Item>
+		<Item>
+			<Name>InputDir</Name>
+			<Value>/public/occ/test/auto_dcfmt/hgj/dcfmt_test/src</Value>
+		</Item>
+		<Item>
+			<Name>CdrDir</Name>
+			<Value>/public/occ/test/auto_dcfmt/hgj/output</Value>
+		</Item>
+		<Item>
+			<Name>TypeToFileName</Name>
+			<Value>IN:in.r;SMS:sms.r;ISMP:ismp.r;CCG:ccg.r;WLAN:wlan.r</Value>
+		</Item>
+		<Item>
+			<Name>TypeToCdrInt</Name>
+			<Value>IN:10|11|12|20|21|24|25|40|41|42;SMS:10|11|12|20|21|24|25|27;ISMP:10|11|12|20|21|24|25;CCG:10|11|12|20|21|24|25|27|28|32;WLAN:10|11|12|20|21|24|25</Value>
+		</Item>
+		<Item>
+			<Name>BureauSQL</Name>
+			<Value>update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 21217;update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212171;update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212172;update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212173;update task_manager set proc_list='ABCDEF',task_state=0 where task_id = 212174</Value>
+		</Item>
+		<Item>
+			<Name>RBSource</Name>
+			<Value>DB_ALL_ALTIBASE</Value>
+		</Item>
+		<Item>
+			<Name>BureauSource</Name>
+			<Value>DB_ALL_ORACLE</Value>
+		</Item>
+	</Param>
+
+	<Param>
+		<Name>DataBase211</Name>
+		<Item>
+			<Name>URL</Name>
+			<Value>jdbc:oracle:thin:nx_occ_211/nx_occ_211@10.26.13.211:1522:TEST211</Value>
+		</Item>
+		<Item>
+			<Name>Driver</Name>
+			<Value>oracle.jdbc.driver.OracleDriver</Value>
+		</Item>
+	</Param>
+
+	<Param>
+		<Name>DB_AH_ORACLE</Name>
+		<Item>
+			<Name>URL</Name>
+			<Value>jdbc:oracle:thin:ocs_ah30/ocs_ah30@172.168.1.241:1521:SID</Value>
+		</Item>
+		<Item>
+			<Name>Driver</Name>
+			<Value>oracle.jdbc.driver.OracleDriver</Value>
+		</Item>
+	</Param>
+
+<Param>
+		<Name>DB_ALL_ORACLE</Name>
+		<Item>
+			<Name>URL</Name>
+			<Value>jdbc:oracle:thin:ocstest30/ocstest30@172.168.1.245:1521:OCS</Value>
+		</Item>
+		<Item>
+			<Name>Driver</Name>
+			<Value>oracle.jdbc.driver.OracleDriver</Value>
+		</Item>
+	</Param>
+	
+	<Param>
+		<Name>DB_AH_TIMESTEN</Name>
+		<Item>
+			<Name>URL</Name>
+			<Value>jdbc:timesten:direct:au_ah</Value>
+		</Item>
+		<Item>
+			<Name>Driver</Name>
+			<Value>com.timesten.jdbc.TimesTenDriver</Value>
+		</Item>
+	</Param>
+	
+	<Param>
+		<Name>DB_ALL_ALTIBASE</Name>
+		<Item>
+			<Name>URL</Name>
+			<Value>jdbc:Altibase://172.168.1.241:20302/mydb?user=ocs&amp;password=ocs&amp;encoding=US7ASCII</Value>
+		</Item>
+		<Item>
+			<Name>Driver</Name>
+			<Value>Altibase.jdbc.driver.AltibaseDriver</Value>
+		</Item>
+	</Param>
+
+</Config>
